@@ -10,6 +10,10 @@
     
     <body>
         <h1>My Favorite Athletes</h1>
+        
         <%= table %>
+        
+        <a href="add"> Add an athlete </a>
+        
     </body>
 </html>
