@@ -82,33 +82,32 @@ public class ReadQuery {
                 athletes.setNationality(this.results.getString("nationality"));
                 athletes.setAge(this.results.getInt("age"));
                 
-                table += "<tr>";
-                
-                table += "<td>";
-                table += athletes.getAthleteID();
-                table += "</td>";
-                
-                table += "<td>";
-                table += athletes.getAthleteName();
-                table += "</td>";
-                
-                table += "<td>";
-                table += athletes.getSport();
-                table += "</td>";
-                
-                table += "<td>";
-                table += athletes.getNationality();
-                table += "</td>";
-                
-                table += "<td>";
-                table += athletes.getAge();
-                table += "</td>";
-                
-                table += "<td>";
-                table += "<a href=delete?athleteID=" + athletes.getAthleteID() + "> Delete </a>";
-                table += "</td>";
-                
-                table += "</tr>";
+                table += "<tr>"
+                        + "<td>"
+                        + athletes.getAthleteID()
+                        + "</td>"
+                        
+                        + "<td>"
+                        + athletes.getAthleteName()
+                        + "</td>"
+                        
+                        + "<td>"
+                        + athletes.getSport()
+                        + "</td>"
+                        
+                        + "<td>"
+                        + athletes.getNationality()
+                        + "</td>"
+                        
+                        + "<td>"
+                        + athletes.getAge()
+                        + "</td>"
+                        
+                        + "<td>"
+                        + "<a href=delete?athleteID=" + athletes.getAthleteID() + "> Delete </a>"
+                        + "</td>"
+                        
+                        + "</tr>";
             }
         } catch (SQLException ex) {
             Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
