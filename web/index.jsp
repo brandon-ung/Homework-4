@@ -9,6 +9,8 @@
     <body>
         <h1>My Favorite Athletes Database</h1>
         
+        <div>
         <a href="read"> View Brandon's Favorite Athletes </a>
+        </div>
     </body>
 </html>

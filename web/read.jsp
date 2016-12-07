@@ -14,7 +14,7 @@
         
         <%= table %>
         
-        <p> <a href="add"> Add an athlete </a> </p>
+        <div> <a href="add"> Add an athlete </a> </div>
         
     </body>
 </html>
