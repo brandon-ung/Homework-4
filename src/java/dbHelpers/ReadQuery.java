@@ -60,7 +60,18 @@ public class ReadQuery {
     public String getHTMLtable(){
         String table = "";
         
-        table += "<table border=1>";
+        table += "<table>";
+        table += "<tr>";
+            table += "<th> Athlete ID </th>";
+            
+            table += "<th> Athlete Name </th>";
+            
+            table += "<th> Sport </th>";
+            
+            table += "<th> Nationality </th>";
+            
+            table += "<th> Age </th>";
+        table += "</tr>";
         
         try {
             while(this.results.next()){
@@ -91,6 +102,10 @@ public class ReadQuery {
                 
                 table += "<td>";
                 table += athletes.getAge();
+                table += "</td>";
+                
+                table += "<td>";
+                table += "<a href=delete?athleteID=" + athletes.getAthleteID() + "> Delete </a>";
                 table += "</td>";
                 
                 table += "</tr>";
